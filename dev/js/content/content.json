@@ -1,29 +1,121 @@
 {
-    "pages": [
-        {
-            "home": {
-                "head": {
-                    "title": "YEBO Bicycle Theme",
-                    "description": "This is a demo site for the YEBO Bicycle Theme."
+    "pages": {
+        "home": {
+            "head": {
+                "title": "YEBO Bicycle Theme",
+                "description": "This is a demo site for the YEBO Bicycle Theme."
+            },
+            "sections": {
+                "hero": {
+                    "name": "hero",
+                    "menu-text": "Home"
                 },
-                "sections": [
-                    {
-                        "hero": {}
-                    },
-                    {
-                        "about": {}
-                    },
-                    {
-                        "work": {}
-                    },
-                    {
-                        "shop": {}
-                    },
-                    {
-                        "contact": {}
-                    }
-                ]
+                "about": {
+                    "name": "about-something",
+                    "menu-text": "About",
+                    "headline": "A New Generation Of Vintage Bike",
+                    "copy": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                },
+                "work": {
+                    "name": "work",
+                    "menu-text": "Work",
+                    "sections": [
+                        {
+                            "name": "bicycle-company",
+                            "logo": true,
+                            "alignment": "left",
+                            "height": 3,
+                            "width": 8
+                        },
+                        {
+                            "name": "vintage-oliva",
+                            "logo": true,
+                            "content": {
+                                "headline": "Vintage Oliva",
+                                "copy": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                            },
+                            "alignment": "right",
+                            "height": 2,
+                            "width": 4
+                        },
+                        {
+                            "name": "bicycle-company-2",
+                            "logo": false,
+                            "alignment": "right",
+                            "height": 1,
+                            "width": 4
+                        },
+                        {
+                            "name": "handcrafted-vintage",
+                            "logo": true,
+                            "alignment": "right",
+                            "height": 3,
+                            "width": 8
+                        },
+                        {
+                            "name": "la-boriosa",
+                            "logo": true,
+                            "content": {
+                                "headline": "La Boriosa",
+                                "copy": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                            },
+                            "alignment": "left",
+                            "height": 2,
+                            "width": 4
+                        },
+                        {
+                            "name": "handcrafted-vintage-2",
+                            "logo": false,
+                            "alignment": "left",
+                            "height": 1,
+                            "width": 4
+                        },
+                        {
+                            "name": "bicycles-since",
+                            "logo": true,
+                            "alignment": "left",
+                            "height": 3,
+                            "width": 4
+                        },
+                        {
+                            "name": "retro-bike",
+                            "logo": true,
+                            "content": {
+                                "headline": "Retrò Bike - M. Hulot",
+                                "copy": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                            },
+                            "alignment": "left",
+                            "height": 2,
+                            "width": 4
+                        },
+                        {
+                            "name": "bicycles-since-2",
+                            "logo": false,
+                            "alignment": "right",
+                            "height": 3,
+                            "width": 4
+                        },
+                        {
+                            "name": "bicycles-since-3",
+                            "logo": false,
+                            "alignment": "left",
+                            "height": 3,
+                            "width": 4
+                        }
+                    ]
+                },
+                "twitter": {
+                    "name": "twitter"
+                },
+                "shop": {
+                    "name": "shop",
+                    "menu-text": "Shop"
+                },
+                "contact": {
+                    "name": "contact",
+                    "menu-text": "Contact"
+                }
             }
         }
-    ]
+    }
 }

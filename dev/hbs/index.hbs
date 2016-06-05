@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
-    {{> head head}}
+    {{> head pages.home.head}}
+
     <body>
+        <main>
+            {{> menu-main pages.home}}
+
+            {{> hero pages.home.sections.hero}}
+
+            {{> about pages.home.sections.about}}
+
+            {{> work pages.home.sections.work}}
+
+            {{> twitter pages.home.sections.twitter}}
+
+        </main>
     </body>
 </html>

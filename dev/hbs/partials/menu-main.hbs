@@ -1,0 +1,7 @@
+<nav class="main-navigation">
+    <ul class="menu">
+      {{#each sections}}
+        {{#if menu-text}}<li class="menu-item menu-item-{{@key}}"><a href="#{{@key}}" class="menu-link menu-link-{{@key}}">{{menu-text}}</a></li>{{/if}}
+      {{/each}}
+    </ul>
+</nav>
