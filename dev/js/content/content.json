@@ -105,7 +105,27 @@
                     ]
                 },
                 "twitter": {
-                    "name": "twitter"
+                    "name": "twitter",
+                    "tweets": [
+                        {
+                            "name": "AOD New York",
+                            "user": "@aod",
+                            "time": "35 min",
+                            "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet."
+                        },
+                        {
+                            "name": "Kenneth Jackson",
+                            "user": "@KennethAJackson",
+                            "time": "1 hr",
+                            "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet."
+                        },
+                        {
+                            "name": "Kenneth Jackson",
+                            "user": "@whoiskenjackson",
+                            "time": "2 hr",
+                            "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet."
+                        }
+                    ]
                 },
                 "shop": {
                     "name": "shop",

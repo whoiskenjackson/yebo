@@ -1,1 +1,16 @@
-<section id="{{name}}" class="section section-{{name}}"></section>
+<section id="{{name}}" class="section section-{{name}}">
+    <figure class="logo"></figure>
+    <ul class="tweets">
+        {{#each tweets}}
+            <li id="tweet-{{@key}}" class="tweet tweet-{{@key}}">
+                <h4>{{name}} {{user}} / <span>{{time}}</span></h4>
+                <p>{{tweet}}</p>
+            </li>
+        {{/each}}
+    </ul>
+    <nav class="tweet-navigation">
+        <ul class="tweet-nav">
+            {{#each tweets}}<li><a href="#tweet-{{@key}}" class="tweet-nav-item" data-tweet="tweet-{{@key}}"></a></li>{{/each}}
+        </ul>
+    </nav>
+</section>
