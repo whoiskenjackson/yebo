@@ -1,0 +1,29 @@
+{
+    "pages": [
+        {
+            "home": {
+                "head": {
+                    "title": "YEBO Bicycle Theme",
+                    "description": "This is a demo site for the YEBO Bicycle Theme."
+                },
+                "sections": [
+                    {
+                        "hero": {}
+                    },
+                    {
+                        "about": {}
+                    },
+                    {
+                        "work": {}
+                    },
+                    {
+                        "shop": {}
+                    },
+                    {
+                        "contact": {}
+                    }
+                ]
+            }
+        }
+    ]
+}

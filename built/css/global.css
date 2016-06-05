@@ -1,4 +1,4 @@
-/* line 5, app/base/_reset.scss */
+/* line 5, ../../dev/css/app/base/_reset.scss */
 html, body {
   width: 100%;
   height: 100%;
@@ -7,24 +7,24 @@ html, body {
   padding: 0;
 }
 
-/* line 13, app/base/_reset.scss */
+/* line 13, ../../dev/css/app/base/_reset.scss */
 html {
   -webkit-text-size-adjust: none;
 }
 
-/* line 15, app/base/_reset.scss */
+/* line 15, ../../dev/css/app/base/_reset.scss */
 article, aside, footer, header, nav, section, figure {
   display: block;
   position: relative;
 }
 
-/* line 20, app/base/_reset.scss */
+/* line 20, ../../dev/css/app/base/_reset.scss */
 img {
   border: none;
   display: block;
 }
 
-/* line 25, app/base/_reset.scss */
+/* line 25, ../../dev/css/app/base/_reset.scss */
 a {
   cursor: pointer;
 }
@@ -46,4 +46,8 @@ a {
     font-family: "Genericons";
     src: url("../fonts/Genericons.svg#Genericons") format("svg");
   }
+}
+/* line 38, ../../dev/css/global.scss */
+body {
+  width: 100%;
 }

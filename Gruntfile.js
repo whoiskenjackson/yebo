@@ -4,56 +4,36 @@ module.exports = function(grunt) {
 
 	require('time-grunt')(grunt);
 
-	/*
-	 * grunt watch -env=dev
-	 * grunt watch -env=website
-	 * grunt watch -theme=theme-name
-	 *
-	 */
-
-	var target = '';
-	var option = '';
-
-	var env = {
-		dev: 'dev',
-		website: 'website',
-		theme: 'website/wp-content/themes'
-	}
-
-    if(grunt.option('env') || grunt.option('theme')) {
-    	
-    	// If grunt option is env, then set option to env, else set option to theme
-    	option = grunt.option('env') ? 'env' : 'theme';
-
-    	// Set the target
-    	if (option === 'theme') {
-    		target = env.theme+'/'+grunt.option(option);
-    	} else {
-    		target = grunt.option(option);
-    	}
-
-    }
-
 	grunt.initConfig({
 		// Project settings
         config: {
             // Configurable paths
-            target: target
+            dev: 'dev',
+            built: 'built'
         },
 
 		watch: {
-			js: {
-				files: ['<%= config.target %>/js/**/{,*/}*.js'],
-				tasks: ['newer:jshint:dist'],
+		    hbs: {
+				files: ['<%= config.dev %>/hbs/**/{,*/}*.hbs', '<%= config.dev %>/js/helpers/**/{,*/}*.js', '<%= config.dev %>/js/content/*.json'],
+				tasks: ['compile-handlebars'],
 				options: {
 					reload: true,
 					nospawn: true
 				}
 			},
-
-			css: {
-				files: ['<%= config.target %>/css/**/{,*/}*.scss'],
+		    
+		    css: {
+				files: ['<%= config.dev %>/css/**/{,*/}*.scss'],
 				tasks: ['sass','newer:autoprefixer:dist'],
+				options: {
+					reload: true,
+					nospawn: true
+				}
+			},
+			
+			js: {
+				files: ['<%= config.dev %>/js/**/{,*/}*.js'],
+				tasks: ['browserify'],
 				options: {
 					reload: true,
 					nospawn: true
@@ -67,42 +47,56 @@ module.exports = function(grunt) {
 				sourcemap: 'none',
 				precision: 7,
 				lineNumbers: true,
-				loadPath: '<%= config.target %>/css/',
+				loadPath: '<%= config.dev %>/css/',
 				trace: true,
 				update: true
 			},
 			dist: {
 				files: [{
 					expand: true,
-					cwd: '<%= config.target %>/css/',
+					cwd: '<%= config.dev %>/css/',
 					src: ['**/{,*/}*.scss'],
-					dest: '<%= config.target %>/css/',
+					dest: '<%= config.built %>/css/',
 					ext: '.css'
 				}]
 			}
 		},
-
-		jshint: {
-			options: {
-                jshintrc: '.jshintrc',
-                reporter: require('jshint-stylish')
+		
+        'compile-handlebars': {
+            globbedTemplateAndOutput: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= config.dev %>/hbs/',
+                    src: '*.hbs',
+                    dest: '<%= config.built %>/',
+                    ext: '.html'
+                }],
+                templateData: '<%= config.dev %>/js/content/content.json',
+                helpers: '<%= config.dev %>/js/helpers/**/{,*/}*.js',
+                partials: '<%= config.dev %>/hbs/partials/**/{,*/}*.hbs'
             },
+        },
+        
+        browserify: {
             dist: {
-				files: [{
-					expand: true,
-					cwd: '<%= config.target %>/js/something',
-					src: ['**/{,*/}*.js']
-				}]
-			}
-		},
+                files: [{
+                    expand: true,     // Enable dynamic expansion.
+                    cwd: '<%= config.dev %>/js/',
+                    src: ['*.js'], // Actual pattern(s) to match.
+                    dest: '<%= config.built %>/js/',
+                    ext: '.js',   // Dest filepaths will have this extension.
+                    extDot: 'first'   // Extensions in filenames begin after the first dot
+                }]
+            }
+        },
 
 		autoprefixer: {
             dist: {
             	files: [{
 	            	expand: true,
-					cwd: '<%= config.target %>/css/',
+					cwd: '<%= config.built %>/css/',
 					src: '**/{,*/}*.css',
-					dest: '<%= config.target %>/css/'
+					dest: '<%= config.built %>/css/'
 				}]
             }
         },
@@ -114,9 +108,9 @@ module.exports = function(grunt) {
 			dist: {
 				files: [{
 				expand: true,
-					cwd: '<%= config.target %>/css/',
+					cwd: '<%= config.built %>/css/',
 					src: ['**/{,*/}.css'],
-					dest: '<%= config.target %>/css'
+					dest: '<%= config.built %>/css'
 				}]
 			}
 		},
@@ -131,9 +125,9 @@ module.exports = function(grunt) {
 			dist: {
 				files: [{
 					expand: true,
-					cwd: '<%= config.target %>/js/',
+					cwd: '<%= config.built %>/js/',
 					src: '**/{,*/}*.js',
-					dest: '<%= config.target %>/js',
+					dest: '<%= config.built %>/js',
 					ext: '.min.js'
 				}]
 			}
@@ -146,9 +140,9 @@ module.exports = function(grunt) {
 				},
 				files: [{
 					expand: true,
-					cwd: '<%= config.target %>/images/',
+					cwd: '<%= config.built %>/images/',
 					src: ['*.{png,jpg,gif}'],
-					dest: '<%= config.target %>/images'
+					dest: '<%= config.built %>/images'
 				}]
 			}
 		},
@@ -156,9 +150,9 @@ module.exports = function(grunt) {
         sass_imagemapper: {
             all: {
                 files:[{
-                    cwd: '<%= config.target %>/images/',
+                    cwd: '<%= config.built %>/images/',
 					src: ['**/{,*/}*.{png,jpg,gif}'],
-                    dest: '<%= config.target %>/css/_imagemap.scss'
+                    dest: '<%= config.dev %>/css/_imagemap.scss'
                 }],
                 options:{
                     prefix: ""
