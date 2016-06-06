@@ -1,3 +1,10 @@
 <section id="{{name}}" class="section section-{{name}}">
-    
+    <div class="product-grid">
+        <ul class="products">
+            {{#each items}}<li class="product product-{{@key}} alignment-{{alignment}}"><a href="#"><span class="copy-wrapper"><figure class="logo"></figure>Shop</span></a></li>{{/each}}
+        </ul>
+    </div>
+    <div class="discover">
+        <a href="#" class="button">Discover</a>
+    </div>
 </section>

@@ -129,11 +129,63 @@
                 },
                 "shop": {
                     "name": "shop",
-                    "menu-text": "Shop"
+                    "menu-text": "Shop",
+                    "items": [
+                        {
+                            "name": "product-1",
+                            "alignment": "left"
+                        },
+                        {
+                            "name": "product-2",
+                            "alignment": "left"
+                        },
+                        {
+                            "name": "product-3",
+                            "alignment": "right"
+                        },
+                        {
+                            "name": "product-4",
+                            "alignment": "right"
+                        },
+                        {
+                            "name": "product-5",
+                            "alignment": "right"
+                        },
+                        {
+                            "name": "product-6",
+                            "alignment": "left"
+                        },
+                        {
+                            "name": "product-7",
+                            "alignment": "right"
+                        },
+                        {
+                            "name": "product-8"
+                        }
+                    ]
                 },
                 "contact": {
                     "name": "contact",
-                    "menu-text": "Contact"
+                    "menu-text": "Contact",
+                    "logo": true,
+                    "copy": "Stay on the saddle!",
+                    "address": {
+                        "title": "AOD New York",
+                        "street": "2250 Lexington Avenue",
+                        "city": "New York",
+                        "state": "NY",
+                        "zipcode": "10035",
+                        "email": "info@domain.com"
+                    },
+                    "social": {
+                        "facebook": "http://facebook.com",
+                        "twitter": "http://twitter.com",
+                        "pinterest": "http://pinterest.com"
+                    },
+                    "signature": {
+                        "copy": "Handcrafted By <span class='logo'>Yebo</span>",
+                        "logo": true
+                    }
                 }
             }
         }
