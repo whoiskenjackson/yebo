@@ -47,7 +47,3 @@ a {
     src: url("../fonts/Genericons.svg#Genericons") format("svg");
   }
 }
-/* line 38, ../../dev/css/global.scss */
-body {
-  width: 100%;
-}

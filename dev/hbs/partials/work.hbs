@@ -1,0 +1,15 @@
+<section id="{{name}}" class="section section-{{name}}">
+    {{#each sections}}
+        <div class="section-item section-item-{{name}} {{#if content}}has-content{{/if}} large-{{width}} height-{{height}}">
+            {{#if logo}}
+                <figure class="section-item-logo section-item-logo-{{name}}"></figure>
+            {{/if}}
+            {{#if content}}
+                <div class="section-item-content">
+                    <h3 class="subsection-headline">{{{content.headline}}}</h3>
+                    <p>{{{content.copy}}}</p>
+                </div>
+            {{/if}}
+        </div>
+    {{/each}}
+</section>
