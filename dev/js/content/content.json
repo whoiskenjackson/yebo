@@ -13,12 +13,14 @@
                 "about": {
                     "name": "about-something",
                     "menu-text": "About",
+                    "menu-classes": "large-2",
                     "headline": "A New Generation Of Vintage Bike",
                     "copy": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
                 },
                 "work": {
                     "name": "work",
                     "menu-text": "Work",
+                    "menu-classes": "large-2",
                     "sections": [
                         {
                             "name": "bicycle-company",
@@ -130,6 +132,7 @@
                 "shop": {
                     "name": "shop",
                     "menu-text": "Shop",
+                    "menu-classes": "large-2 push-large-4",
                     "items": [
                         {
                             "name": "product-1",
@@ -167,6 +170,7 @@
                 "contact": {
                     "name": "contact",
                     "menu-text": "Contact",
+                    "menu-classes": "large-2",
                     "logo": true,
                     "copy": "Stay on the saddle!",
                     "address": {

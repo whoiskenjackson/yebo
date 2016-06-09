@@ -1,7 +1,7 @@
-<nav class="main-navigation">
-    <ul class="menu">
+<nav class="main-navigation pull-center">
+    <ul class="menu row">
       {{#each sections}}
-        {{#if menu-text}}<li class="menu-item menu-item-{{@key}}"><a href="#{{@key}}" class="menu-link menu-link-{{@key}}">{{menu-text}}</a></li>{{/if}}
+        {{#if menu-text}}<li class="col menu-item menu-item-{{@key}} {{{menu-classes}}}"><a href="#{{@key}}" class="menu-link menu-link-{{@key}}">{{menu-text}}</a></li>{{/if}}
       {{/each}}
     </ul>
 </nav>

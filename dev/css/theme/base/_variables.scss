@@ -10,19 +10,35 @@
 // Grid System
 // --------------------------------------
 
-// $system-width: 1200px;
-// $column-width: 60px;
-// $gutter-width: 20px;
-// $columns: 15;
+$system-width: 1600;
+$gutter-width: 0;
+$columns: 12;
+$column-width: $system-width / $columns;
 
 // --------------------------------------
 // Colors
 // --------------------------------------
 
-// $black-02: #222;
+// Black
+$black-02: #353738;
+
+// White
+$white-02: #f7f7f7;
+
+// Gray
+$gray-01: #848789;
+$gray-02: #a9afb3;
+$gray-03: #c9c9c9;
+
+// Plum
+$plum-01: #4d4959;
+$plum-02: #282f35;
+
+// Green
+$green-01: #64c29e;
 
 // --------------------------------------
 // Fonts
 // --------------------------------------
 
-// $roboto: 'Roboto Slab';
+$roboto: 'Lato', sans-serif;

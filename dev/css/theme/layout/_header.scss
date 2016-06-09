@@ -1,3 +1,49 @@
 // --------------------------------------
 // Header
 // --------------------------------------
+
+$logo-width: 94px;
+$logo-height: 85px;
+
+.main-navigation {
+    
+    width: 625px;
+    padding-top: 70px;
+    overflow: visible;
+    
+    .menu {
+        width: 100%;
+        overflow: visible;
+        position: relative;
+    }
+    
+    .menu-item { overflow: visible; }
+    
+    .menu-item-hero {
+        width: $logo-width;
+        height: $logo-height;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -($logo-width / 2);
+        margin-top: -($logo-height / 2);
+        
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url(../images/logo.png) center center;
+            @include image-replace();
+            
+            &:hover { @include image-replace(); }
+        }
+    }
+    
+    a {
+        display: block;
+        color: $plum-01;
+        text-align: center;
+        
+        &:hover { color: $green-01; }
+    }
+}
