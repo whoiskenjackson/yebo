@@ -1,0 +1,38 @@
+/* line 1, ../../../dev/css/pages/sections/_hero.scss */
+.section-hero {
+  height: 800px;
+  background: #d6d2db;
+}
+/* line 5, ../../../dev/css/pages/sections/_hero.scss */
+.section-hero .hero-background {
+  display: block;
+  position: absolute;
+  width: 1600px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -800px;
+  background: url(../../images/bg-hero.png) center top no-repeat;
+  z-index: 1;
+}
+/* line 16, ../../../dev/css/pages/sections/_hero.scss */
+.section-hero .hero-background:before, .section-hero .hero-background:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  top: 0;
+}
+/* line 26, ../../../dev/css/pages/sections/_hero.scss */
+.section-hero .hero-background:before {
+  left: 0;
+  background-image: -webkit-linear-gradient(right, rgba(214, 210, 219, 0) 0%, #d6d2db 100%);
+  background-image: linear-gradient(right, rgba(214, 210, 219, 0) 0%, #d6d2db 100%);
+}
+/* line 31, ../../../dev/css/pages/sections/_hero.scss */
+.section-hero .hero-background:after {
+  right: 0;
+  background-image: -webkit-linear-gradient(left, rgba(214, 210, 219, 0) 0%, #d6d2db 100%);
+  background-image: linear-gradient(left, rgba(214, 210, 219, 0) 0%, #d6d2db 100%);
+}

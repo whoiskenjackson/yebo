@@ -30,12 +30,17 @@ a {
 }
 
 /* line 5, ../../dev/css/theme/base/_reset.scss */
-ul, li, p {
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* line 6, ../../dev/css/theme/base/_reset.scss */
+ul, li, p, figure {
   margin: 0;
   padding: 0;
 }
 
-/* line 6, ../../dev/css/theme/base/_reset.scss */
+/* line 7, ../../dev/css/theme/base/_reset.scss */
 ul {
   list-style: none;
 }
@@ -648,21 +653,28 @@ ul {
 
 /* line 8, ../../dev/css/theme/layout/_header.scss */
 .main-navigation {
+  position: relative;
   width: 625px;
   padding-top: 70px;
   overflow: visible;
+  z-index: 2;
+  margin: 0 auto;
 }
-/* line 14, ../../dev/css/theme/layout/_header.scss */
+/* line 17, ../../dev/css/theme/layout/_header.scss */
 .main-navigation .menu {
   width: 100%;
   overflow: visible;
   position: relative;
 }
-/* line 20, ../../dev/css/theme/layout/_header.scss */
+/* line 23, ../../dev/css/theme/layout/_header.scss */
 .main-navigation .menu-item {
   overflow: visible;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
-/* line 22, ../../dev/css/theme/layout/_header.scss */
+/* line 31, ../../dev/css/theme/layout/_header.scss */
 .main-navigation .menu-item-hero {
   width: 94px;
   height: 85px;
@@ -672,7 +684,7 @@ ul {
   margin-left: -47px;
   margin-top: -42.5px;
 }
-/* line 31, ../../dev/css/theme/layout/_header.scss */
+/* line 40, ../../dev/css/theme/layout/_header.scss */
 .main-navigation .menu-item-hero a {
   display: block;
   width: 100%;
@@ -683,20 +695,21 @@ ul {
   color: transparent;
   overflow: hidden;
 }
-/* line 38, ../../dev/css/theme/layout/_header.scss */
+/* line 47, ../../dev/css/theme/layout/_header.scss */
 .main-navigation .menu-item-hero a:hover {
   width: 100%;
   height: 100%;
   color: transparent;
   overflow: hidden;
 }
-/* line 42, ../../dev/css/theme/layout/_header.scss */
+/* line 51, ../../dev/css/theme/layout/_header.scss */
 .main-navigation a {
   display: block;
   color: #4d4959;
   text-align: center;
+  text-decoration: none;
 }
-/* line 47, ../../dev/css/theme/layout/_header.scss */
+/* line 57, ../../dev/css/theme/layout/_header.scss */
 .main-navigation a:hover {
   color: #64c29e;
 }

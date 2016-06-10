@@ -2,5 +2,6 @@
 // Reset
 // --------------------------------------
 
-ul, li, p { margin: 0; padding: 0; }
+body { font-family: $lato; }
+ul, li, p, figure { margin: 0; padding: 0; }
 ul { list-style: none; }
