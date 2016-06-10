@@ -1,0 +1,31 @@
+$about-logo-width: 52px;
+$about-logo-height: 43px;
+
+.section-about {
+    background: $white-02;
+    text-align: center;
+
+    .section-logo {
+        display: block;
+        width: $about-logo-width;
+        height: $about-logo-height;
+        margin: 0 auto 30px;
+        background: url(../../images/icon-about.png) center center;
+    }
+
+    .subheadline {
+        margin: 0 0 30px;
+        color: $black-02;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    .copy {
+        color: $gray-01;
+        font-size: 18px;
+        line-height: 34px;
+        margin: 0 0 30px;
+    }
+}

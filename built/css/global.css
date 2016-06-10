@@ -713,3 +713,16 @@ ul {
 .main-navigation a:hover {
   color: #64c29e;
 }
+
+/* line 5, ../../dev/css/theme/layout/_wrapper.scss */
+.section {
+  width: 100%;
+}
+
+/* line 9, ../../dev/css/theme/layout/_wrapper.scss */
+.section-content {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 0 120px;
+}

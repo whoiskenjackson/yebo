@@ -2,8 +2,8 @@
 // Header
 // --------------------------------------
 
-$logo-width: 94px;
-$logo-height: 85px;
+$header-logo-width: 94px;
+$header-logo-height: 85px;
 
 .main-navigation {
     
@@ -29,13 +29,13 @@ $logo-height: 85px;
     }
     
     .menu-item-hero {
-        width: $logo-width;
-        height: $logo-height;
+        width: $header-logo-width;
+        height: $header-logo-height;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-left: -($logo-width / 2);
-        margin-top: -($logo-height / 2);
+        margin-left: -($header-logo-width / 2);
+        margin-top: -($header-logo-height / 2);
         
         a {
             display: block;
