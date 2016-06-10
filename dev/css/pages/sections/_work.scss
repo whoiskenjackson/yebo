@@ -1,0 +1,43 @@
+$about-logo-width: 52px;
+$about-logo-height: 43px;
+
+.section-work {
+    
+    .height-1 { height: 200px; }
+    .height-2 { height: 400px; }
+    .height-3 { height: 600px; }
+    
+    .section-item-bicycle-company {
+        background: url(../../images/work-01.jpg) center center;
+    }
+    
+    .section-item-vintage-oliva {}
+    
+    .section-item-bicycle-company-2 {
+        background: url(../../images/work-02.jpg) center center;
+    }
+    
+    .section-item-handcrafted-vintage {
+        background: url(../../images/work-03.jpg) center center;
+    }
+    
+    .section-item-la-boriosa {}
+    
+    .section-item-handcrafted-vintage-2 {
+        background: url(../../images/work-04.jpg) center center;
+    }
+    
+    .section-item-bicycles-since {
+        background: url(../../images/work-05.jpg) center center;
+    }
+    
+    .section-item-retro-bike {}
+    
+    .section-item-bicycles-since-2 {
+        background: url(../../images/work-07.jpg) center center;
+    }
+    
+    .section-item-bicycles-since-3 {
+        background: url(../../images/work-06.jpg) center center;
+    }
+}

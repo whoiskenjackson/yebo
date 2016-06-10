@@ -66,3 +66,44 @@
   line-height: 34px;
   margin: 0 0 30px;
 }
+
+/* line 6, ../../../dev/css/pages/sections/_work.scss */
+.section-work .height-1 {
+  height: 200px;
+}
+/* line 7, ../../../dev/css/pages/sections/_work.scss */
+.section-work .height-2 {
+  height: 400px;
+}
+/* line 8, ../../../dev/css/pages/sections/_work.scss */
+.section-work .height-3 {
+  height: 600px;
+}
+/* line 10, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-bicycle-company {
+  background: url(../../images/work-01.jpg) center center;
+}
+/* line 16, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-bicycle-company-2 {
+  background: url(../../images/work-02.jpg) center center;
+}
+/* line 20, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-handcrafted-vintage {
+  background: url(../../images/work-03.jpg) center center;
+}
+/* line 26, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-handcrafted-vintage-2 {
+  background: url(../../images/work-04.jpg) center center;
+}
+/* line 30, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-bicycles-since {
+  background: url(../../images/work-05.jpg) center center;
+}
+/* line 36, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-bicycles-since-2 {
+  background: url(../../images/work-07.jpg) center center;
+}
+/* line 40, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-bicycles-since-3 {
+  background: url(../../images/work-06.jpg) center center;
+}
