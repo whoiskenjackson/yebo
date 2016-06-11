@@ -39,12 +39,7 @@ $header-logo-height: 85px;
         
         a {
             display: block;
-            width: 100%;
-            height: 100%;
-            background: url(../images/logo.png) center center;
-            @include image-replace();
-            
-            &:hover { @include image-replace(); }
+            @include image-replace($background: '../images/logo.png');
         }
     }
     

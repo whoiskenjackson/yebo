@@ -1,5 +1,15 @@
-$about-logo-width: 52px;
-$about-logo-height: 43px;
+$logo-bicycle-company-width: 113px;
+$logo-bicycle-company-height: 118px;
+$logo-handcrafted-vintage-width: 177px;
+$logo-handcrafted-vintage-height: 152px;
+$logo-since-bicycles-width: 208px;
+$logo-since-bicycles-height: 67px;
+$logo-vintage-oliva-width: 41px;
+$logo-vintage-oliva-height: 30px;
+$logo-la-boriosa-width: 32px;
+$logo-la-boriosa-height: 32px;
+$logo-retro-bike-width: 23px;
+$logo-retro-bike-height: 41px;
 
 .section-work {
     
@@ -7,11 +17,72 @@ $about-logo-height: 43px;
     .height-2 { height: 400px; }
     .height-3 { height: 600px; }
     
+    .section-item-logo { display: block; }
+    
+    .has-content {
+        &:before {
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            content: '';
+            left: 50%;
+            bottom: -20px;
+            margin-left: -20px;
+            z-index: 2;
+            
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid $white-01;
+        }
+        
+        .section-item-logo { margin: 0 auto 30px; }
+    }
+    
+    .no-content .section-item-logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    
+    .section-item-content {
+        padding-top: 70px;
+        margin: 0 auto;
+    }
+    
+    .subsection-headline {
+        margin: 0 0 20px;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .copy {
+        color: $gray-01;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: justify;
+    }
+    
     .section-item-bicycle-company {
         background: url(../../images/work-01.jpg) center center;
     }
     
-    .section-item-vintage-oliva {}
+    .section-item-logo-bicycle-company {
+        width: $logo-bicycle-company-width;
+        height: $logo-bicycle-company-height;
+        margin-top: -($logo-bicycle-company-height/2);
+        margin-left: -($logo-bicycle-company-width/2);
+        background: url(../../images/icon-bicycle-company.png) center center;
+    }
+    
+    .section-item-logo-vintage-oliva {
+        width: $logo-vintage-oliva-width;
+        height: $logo-vintage-oliva-height;
+        background: url(../../images/icon-vintage-oliva.png) center center;
+    }
     
     .section-item-bicycle-company-2 {
         background: url(../../images/work-02.jpg) center center;
@@ -21,7 +92,19 @@ $about-logo-height: 43px;
         background: url(../../images/work-03.jpg) center center;
     }
     
-    .section-item-la-boriosa {}
+    .section-item-logo-handcrafted-vintage {
+        width: $logo-handcrafted-vintage-width;
+        height: $logo-handcrafted-vintage-height;
+        margin-top: -($logo-handcrafted-vintage-height/2);
+        margin-left: -($logo-handcrafted-vintage-width/2);
+        background: url(../../images/icon-handcrafted-vintage.png) center center;
+    }
+    
+    .section-item-logo-la-boriosa {
+        width: $logo-la-boriosa-width;
+        height: $logo-la-boriosa-height;
+        background: url(../../images/icon-la-boriosa.png) center center;
+    }
     
     .section-item-handcrafted-vintage-2 {
         background: url(../../images/work-04.jpg) center center;
@@ -31,7 +114,19 @@ $about-logo-height: 43px;
         background: url(../../images/work-05.jpg) center center;
     }
     
-    .section-item-retro-bike {}
+    .section-item-logo-bicycles-since {
+        width: $logo-since-bicycles-width;
+        height: $logo-since-bicycles-height;
+        margin-top: -($logo-since-bicycles-height/2);
+        margin-left: -($logo-since-bicycles-width/2);
+        background: url(../../images/icon-since-bicycles.png) center center;
+    }
+    
+    .section-item-logo-retro-bike {
+        width: $logo-retro-bike-width;
+        height: $logo-retro-bike-height;
+        background: url(../../images/icon-retro-bike.png) center center;
+    }
     
     .section-item-bicycles-since-2 {
         background: url(../../images/work-07.jpg) center center;

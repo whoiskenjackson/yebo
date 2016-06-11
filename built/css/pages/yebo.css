@@ -67,43 +67,135 @@
   margin: 0 0 30px;
 }
 
-/* line 6, ../../../dev/css/pages/sections/_work.scss */
+/* line 16, ../../../dev/css/pages/sections/_work.scss */
 .section-work .height-1 {
   height: 200px;
 }
-/* line 7, ../../../dev/css/pages/sections/_work.scss */
+/* line 17, ../../../dev/css/pages/sections/_work.scss */
 .section-work .height-2 {
   height: 400px;
 }
-/* line 8, ../../../dev/css/pages/sections/_work.scss */
+/* line 18, ../../../dev/css/pages/sections/_work.scss */
 .section-work .height-3 {
   height: 600px;
 }
-/* line 10, ../../../dev/css/pages/sections/_work.scss */
+/* line 20, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-logo {
+  display: block;
+}
+/* line 23, ../../../dev/css/pages/sections/_work.scss */
+.section-work .has-content:before {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  left: 50%;
+  bottom: -20px;
+  margin-left: -20px;
+  z-index: 2;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #fff;
+}
+/* line 39, ../../../dev/css/pages/sections/_work.scss */
+.section-work .has-content .section-item-logo {
+  margin: 0 auto 30px;
+}
+/* line 42, ../../../dev/css/pages/sections/_work.scss */
+.section-work .no-content .section-item-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+/* line 48, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-content {
+  padding-top: 70px;
+  margin: 0 auto;
+}
+/* line 53, ../../../dev/css/pages/sections/_work.scss */
+.section-work .subsection-headline {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 62, ../../../dev/css/pages/sections/_work.scss */
+.section-work .copy {
+  color: #848789;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: justify;
+}
+/* line 69, ../../../dev/css/pages/sections/_work.scss */
 .section-work .section-item-bicycle-company {
   background: url(../../images/work-01.jpg) center center;
 }
-/* line 16, ../../../dev/css/pages/sections/_work.scss */
+/* line 73, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-logo-bicycle-company {
+  width: 113px;
+  height: 118px;
+  margin-top: -59px;
+  margin-left: -56.5px;
+  background: url(../../images/icon-bicycle-company.png) center center;
+}
+/* line 81, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-logo-vintage-oliva {
+  width: 41px;
+  height: 30px;
+  background: url(../../images/icon-vintage-oliva.png) center center;
+}
+/* line 87, ../../../dev/css/pages/sections/_work.scss */
 .section-work .section-item-bicycle-company-2 {
   background: url(../../images/work-02.jpg) center center;
 }
-/* line 20, ../../../dev/css/pages/sections/_work.scss */
+/* line 91, ../../../dev/css/pages/sections/_work.scss */
 .section-work .section-item-handcrafted-vintage {
   background: url(../../images/work-03.jpg) center center;
 }
-/* line 26, ../../../dev/css/pages/sections/_work.scss */
+/* line 95, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-logo-handcrafted-vintage {
+  width: 177px;
+  height: 152px;
+  margin-top: -76px;
+  margin-left: -88.5px;
+  background: url(../../images/icon-handcrafted-vintage.png) center center;
+}
+/* line 103, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-logo-la-boriosa {
+  width: 32px;
+  height: 32px;
+  background: url(../../images/icon-la-boriosa.png) center center;
+}
+/* line 109, ../../../dev/css/pages/sections/_work.scss */
 .section-work .section-item-handcrafted-vintage-2 {
   background: url(../../images/work-04.jpg) center center;
 }
-/* line 30, ../../../dev/css/pages/sections/_work.scss */
+/* line 113, ../../../dev/css/pages/sections/_work.scss */
 .section-work .section-item-bicycles-since {
   background: url(../../images/work-05.jpg) center center;
 }
-/* line 36, ../../../dev/css/pages/sections/_work.scss */
+/* line 117, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-logo-bicycles-since {
+  width: 208px;
+  height: 67px;
+  margin-top: -33.5px;
+  margin-left: -104px;
+  background: url(../../images/icon-since-bicycles.png) center center;
+}
+/* line 125, ../../../dev/css/pages/sections/_work.scss */
+.section-work .section-item-logo-retro-bike {
+  width: 23px;
+  height: 41px;
+  background: url(../../images/icon-retro-bike.png) center center;
+}
+/* line 131, ../../../dev/css/pages/sections/_work.scss */
 .section-work .section-item-bicycles-since-2 {
   background: url(../../images/work-07.jpg) center center;
 }
-/* line 40, ../../../dev/css/pages/sections/_work.scss */
+/* line 135, ../../../dev/css/pages/sections/_work.scss */
 .section-work .section-item-bicycles-since-3 {
   background: url(../../images/work-06.jpg) center center;
 }

@@ -1,14 +1,18 @@
 <section id="{{name}}" class="section section-{{name}} row">
     {{#each sections}}
-        <div class="col section-item section-item-{{name}} {{#if content}}has-content{{/if}} large-{{width}} height-{{height}} {{#if alignment}}pull-{{alignment}}{{/if}}">
-            {{#if logo}}
-                <figure class="section-item-logo section-item-logo-{{name}}"></figure>
-            {{/if}}
+        <div class="col section-item section-item-{{name}} {{#if content}}has-content{{else}}no-content{{/if}} large-{{width}} height-{{height}} {{#if alignment}}pull-{{alignment}}{{/if}}">
             {{#if content}}
-                <div class="section-item-content">
+                <div class="section-item-content large-9">
+                    {{#if logo}}
+                        <figure class="section-item-logo section-item-logo-{{name}}"></figure>
+                    {{/if}}
                     <h3 class="subsection-headline">{{{content.headline}}}</h3>
-                    <p>{{{content.copy}}}</p>
+                    <p class="copy">{{{content.copy}}}</p>
                 </div>
+            {{else}}
+                {{#if logo}}
+                    <figure class="section-item-logo section-item-logo-{{name}}"></figure>
+                {{/if}}
             {{/if}}
         </div>
     {{/each}}
